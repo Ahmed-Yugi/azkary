@@ -18,7 +18,17 @@ class _SplashScreenState extends State<SplashScreen> {
   }
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Image.asset("assets/images/sebha.png",fit: BoxFit.contain,)),
+        body: Stack(
+          children: [
+            // طبقة الصورة (تملأ الشاشة بالكامل)
+            Positioned.fill(
+              child: Image.asset(
+                "assets/images/sebha.png",
+                fit: BoxFit.cover, // ده أهم جزء، بيخلي الصورة تغطي كل المساحة
+              ),
+            ),
+          ],
+        )
     );
   }
 }
