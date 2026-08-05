@@ -154,7 +154,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
             color: ColorsManager.primaryColor,
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 720),
+            padding:  EdgeInsets.only(top: 640),
             child: Divider(
               color: ColorsManager.primaryColor,
               thickness: 30,
@@ -162,7 +162,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
           ),
           //layer 2 counter & rest button ----------------------------------LY2
           Padding(
-            padding: const EdgeInsets.only(top: 675),
+            padding:  EdgeInsets.only(top: 600),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               spacing: 10,
